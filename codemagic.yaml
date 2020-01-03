@@ -26,6 +26,7 @@ workflows:
         for profile in "${!CM_PROVISIONING_PROFILE_@}"; do
             PROFILE_PATH="$(mktemp "$PROFILES_HOME"/$(uuidgen).mobileprovision)"
             echo ${!profile} | base64 --decode > $PROFILE_PATH
+            echo "Saved provisioning profile $PROFILE_PATH"
         done
       - |
         # set up signing certificate
