@@ -9,6 +9,8 @@ workflows:
     scripts:
       - sudo python3 -m pip install https://github.com/codemagic-ci-cd/cli-tools/archive/feature/automatic-provisioning.zip
       - flutter packages pub get
+      - find . -name "Podfile" -execdir pod install \;
+      - flutter build ios --release --no-codesign
       - keychain initialize
       - manual-provisioning fetch-signing-files --profile-names 0a660ab0-9dc7-432d-94cf-7f73fa400789/9bc0d7b6-b1aa-4308-99ce-6b9da28057d3
         --certificate-name f829b9e9-26e2-49ef-8f61-53382c5ada81/76e0320a-a83c-492b-8a65-fd58c35c063a
