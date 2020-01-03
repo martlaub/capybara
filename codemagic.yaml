@@ -5,8 +5,6 @@ workflows:
   default-workflow:
     name: Default Workflow
     environment:
-      vars:
-        YAML_BUILD: true
       flutter: stable
     scripts:
       - sudo python3 -m pip install https://github.com/codemagic-ci-cd/cli-tools/archive/feature/automatic-provisioning.zip
