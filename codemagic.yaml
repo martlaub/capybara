@@ -2,8 +2,8 @@
 # Note that this configuration is not an exact match to UI settings. Review and adjust as necessary.
 
 workflows:
-  default-workflow:
-    name: Default Workflow
+  live-workflow:
+    name: Live Workflow
     environment:
       flutter: stable
     scripts:
@@ -12,9 +12,9 @@ workflows:
       - find . -name "Podfile" -execdir pod install \;
       - flutter build ios --release --no-codesign
       - keychain initialize
-      - manual-provisioning fetch-signing-files --profile-names 0a660ab0-9dc7-432d-94cf-7f73fa400789/9bc0d7b6-b1aa-4308-99ce-6b9da28057d3
-        --certificate-name f829b9e9-26e2-49ef-8f61-53382c5ada81/76e0320a-a83c-492b-8a65-fd58c35c063a
-        --certificate-password-name f829b9e9-26e2-49ef-8f61-53382c5ada81/76e0320a-a83c-492b-8a65-fd58c35c063a
+      - manual-provisioning fetch-signing-files --profile-names ef2f4283-0726-437d-93a5-752b4f9286f0/36820004-66ef-48f6-ac19-07dbbff0dff8
+        --certificate-name 527b15fd-27f2-4bf8-8018-ca2570305b6f/1e6607ad-4195-4c9c-b13b-8c3e896760f7
+        --certificate-password-name bd07d44d-ae4e-40bf-b4a7-373caa5c9462/f6628aa0-9929-40d7-9e98-52cce26ae9ed
       - keychain add-certificates
       - xcode-project use-profiles
       - xcode-project build-ipa --workspace ios/Runner.xcworkspace --config Release
