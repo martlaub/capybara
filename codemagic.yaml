@@ -22,6 +22,7 @@ workflows:
       - |
         # set up provisioning profiles
         PROFILES_HOME="$HOME/Library/MobileDevice/Provisioning Profiles"
+        mkdir -p "$PROFILES_HOME"
         for profile in "${!CM_PROVISIONING_PROFILE_@}"; do
             PROFILE_PATH="$(mktemp "$PROFILES_HOME"/$(uuidgen).mobileprovision)"
             echo ${!profile} | base64 --decode > $PROFILE_PATH
