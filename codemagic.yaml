@@ -12,6 +12,7 @@ workflows:
         CM_KEY_ALIAS_USERNAME: Encrypted(Z0FBQUFBQmVEeGZMa1IzS3FDM09lbkZKUmphN3JWVTVYQWVEcS1qcDh3VEF5Zlg2ejNHRkNlSmhMZXNSazJLdmMxNXBIMVFUbHR2X1BYSm9pTzJhYWFjTlFacV9KbU9RSnc9PQ==)
       flutter: stable
     scripts:
+      - sudo python3 -m pip install https://github.com/codemagic-ci-cd/cli-tools/archive/feature/automatic-provisioning.zip
       - flutter packages pub get
       - keychain initialize
       - manual-provisioning fetch-signing-files --profile-names 0a660ab0-9dc7-432d-94cf-7f73fa400789/9bc0d7b6-b1aa-4308-99ce-6b9da28057d3
