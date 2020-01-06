@@ -2,7 +2,7 @@
 # Note that this configuration is not an exact match to UI settings. Review and adjust as necessary.
 
 workflows:
-  default-workflow:
+  manual-provisioning:
     name: Manual Provisioning
     environment:
       vars:
@@ -34,7 +34,7 @@ workflows:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild.log
       - /tmp/codemagic-*.log
-  default-workflow:
+  automatic-provisioning:
     name: Automatic Provisioning
     environment:
       vars:
