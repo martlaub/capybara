@@ -56,5 +56,5 @@ workflows:
       - xcode-project build-ipa --workspace ios/Runner.xcworkspace --config Release
     artifacts:
       - build/ios/ipa/*.ipa
-      - /tmp/xcodebuild.log
+      - /tmp/xcodebuild_*.log
       - /tmp/codemagic-*.log
