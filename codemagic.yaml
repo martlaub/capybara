@@ -49,7 +49,7 @@ workflows:
       - flutter packages pub get
       - find . -name "Podfile" -execdir pod install \;
       - keychain initialize
-      - automatic-provisioning fetch-signing-files "$(xcode-project detect-bundle-id)" --create
+      - app-store-connect fetch-signing-files "$(xcode-project detect-bundle-id)" --type IOS_APP_DEVELOPMENT --create
       - keychain add-certificates
       - flutter build ios --release --no-codesign
       - xcode-project use-profiles
