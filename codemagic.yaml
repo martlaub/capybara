@@ -5,7 +5,6 @@ workflows:
   app-store-connect-publishing:
     name: Test App Store Connect publishing
     environment:
-      vars:
       flutter: stable
     scripts:
       - echo "Skip build"
