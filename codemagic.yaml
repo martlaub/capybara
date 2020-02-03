@@ -7,9 +7,9 @@ workflows:
     environment:
       flutter: stable
     scripts:
-      - echo "Skip build"
+      - wget https://api.codemagic.io/artifacts/6880e1db-70ca-4580-8d6c-2ce21b48da3a/ee561cbf-5380-4658-a407-fffb4a0ec6ce/Capybara_Release.ipa -O ~/capybara.ipa
     artifacts:
-      - ~/Capybara_Release.ipa
+      - ~/capybara.ipa
     publishing:
       app_store_connect:
         app_id: '1496105355'
