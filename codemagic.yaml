@@ -12,6 +12,6 @@ workflows:
       - ~/Capybara_Release.ipa
     publishing:
       app_store_connect:
-        app_id: app-id
-        apple_id: apple-id
-        password: Encrypted(Z0FBQUFBQmVPQXFjY1lqaWM1R0hpYTJaU2ZMeGRXN2wzQlUxM2I2Q2xHUlNERkJTanNLOTU4WnBWTE10SVRGN3REaHFINkVFVHIwc1l6aDJkSE1sMXozUUlKSnJHUmdlUXc9PQ==)
+        app_id: '1496105355'
+        apple_id: priit@nevercode.io
+        password: Encrypted(Z0FBQUFBQmVPQ0Zoc2oyRFkwWkxHTndNT1BreEllRkNCdkVpcVF3NFBWeXYwdXNnMUkxX2FtQzl1Qm5ZVDFrbkJPaWlOQmk1SGlYS2huUlU3cnFXX1FKeXphdmJLU0NsX2dRMXhCMmNCdDFENmtRSGpfRXRvWUE9)
