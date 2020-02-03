@@ -13,8 +13,6 @@ workflows:
       - ~/Capybara_Release.ipa
     publishing:
       app_store_connect:
-        credentials:
-          username: apple-id
-          password: !!python/tuple
-            - Encrypted(Z0FBQUFBQmVPQVd6akZjSDNjQWFrSFI4akZFblJkNVFvQm5wTEhxRFZuQ3RIdWxpN0RuMENBZmJzUTIwcW1BdGJCU0tFb3dHUkR1TmVMR0lUeVZNYjk0OGpjY1JhN1F4VGc9PQ==)
         app_id: app-id
+        apple_id: apple-id
+        password: Encrypted(Z0FBQUFBQmVPQXFjY1lqaWM1R0hpYTJaU2ZMeGRXN2wzQlUxM2I2Q2xHUlNERkJTanNLOTU4WnBWTE10SVRGN3REaHFINkVFVHIwc1l6aDJkSE1sMXozUUlKSnJHUmdlUXc9PQ==)
