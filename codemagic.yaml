@@ -1,5 +1,5 @@
 workflows:
-  default-workflow:
+  yaml-workflow:
     name: Default Workflow
     environment:
       vars:
